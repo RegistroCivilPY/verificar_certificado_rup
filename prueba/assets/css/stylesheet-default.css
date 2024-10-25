@@ -1,0 +1,447 @@
+/*
+ * CSS for identity provider views.
+ *
+ * This CSS is a copy of the base CSS (included in all views). You can use it as an
+ * example for defining your own custom CSS.
+ *
+ * To use a custom CSS, you must reference it from the 'customCss' property (see
+ * 'ui_common.properties'). Your CSS will be loaded after the base CSS. Therefore, the
+ * declarations in your CSS will take precedence over the base CSS.
+ *
+ * For performance and maintenance reasons, it is recommended to simplify your custom CSS
+ * so that it only contains the declarations differing from the base CSS. This will avoid
+ * the same declarations to be loaded twice for each page.
+ */
+
+/*
+ * All views
+ */
+body {
+	border-top: 5px solid #9B0000;
+	line-height: 0.9;
+}
+a:link {
+	color: #9C0000;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #9C0000;
+	text-decoration: underline;
+}
+
+a:visited {
+	color: #9C0000;
+    text-decoration: none;
+}
+
+.headerContainer {
+	margin-top: 1em;
+	margin-bottom: 2em;
+}
+
+.headerImageArea {
+	text-align: center;
+}
+
+
+.headerTitleArea {
+ 	text-align: center;
+ 	font-size: xx-large;
+}
+
+.mainContainer {
+	padding-bottom: 1em;
+}
+
+.footersArea {
+	text-align: center;
+}
+
+.poweredByArea {
+	text-align: center;
+}
+
+/*
+ * validacion flow selector
+ */
+
+.flowSelectorForm {
+	margin-bottom: 1em;
+}
+
+.flowSelectorFormTitleArea {
+	margin-bottom: 1em;
+}
+
+.flowSelectorFlowList {
+	margin-bottom: 1em;
+}
+
+.flowSelectorFlow {
+	margin-bottom: 1em;
+}
+
+.flowSelectorFlowLink {
+	text-align: left;
+	white-space: normal;
+}
+
+.flowSelectorFlowTitleText {
+	font-weight: bold;
+	color: black;
+}
+
+.flowSelectorFlowDetailsText {
+	color: black;
+}
+
+.flowSelectorFlowImageArea {
+	text-align:center;
+}
+
+.flowSelectorFlowImage {
+	height: 4em;
+}
+
+.flowSelectorHelpArea {
+	text-align: center;
+	margin-bottom: 1em;
+}
+
+/*
+ * validacion views
+ */
+
+.devicePersonalizedImageArea {
+	margin-bottom: 2em;
+}
+
+.devicePersonalizedImage {
+	height: 5em;
+}
+
+.validacionContainer {
+	border: 1px solid #d8d8d8;
+	padding: 1em;
+}
+
+.validacionTopArea {
+	margin-bottom: 1em;
+}
+
+.validacionPromptArea {
+	margin-bottom: 2em;
+}
+
+.validacionBottomArea {
+	margin-top: 1em;
+}
+
+.disabledJavascriptWarningText {
+	display: table;
+	border: 1px solid #fd8080;
+	padding: .5em;
+	margin: 1em auto;
+	text-align: center;
+}
+
+.form-control:focus {
+	border-color: #ccc;
+	outline: 0;
+	box-shadow: none;
+}
+
+.validacionForm {
+	margin-bottom: 1em;
+}
+
+.validacionFormTitleArea {
+	margin-bottom: 1em;
+}
+
+.validacionRegisterDeviceOption {
+	padding-bottom: 1em;
+	text-align: center;
+}
+
+@media (max-width: 767px) {
+	.validacionUsernameField > label {
+		/* display: none; */
+	}
+
+	.validacionPasswordField > label {
+		/* display: none; */
+	}
+}
+
+@media (min-width: 768px) {
+	.transparentPlaceholder::-webkit-input-placeholder {
+		color:transparent;
+	}
+
+	.transparentPlaceholder:-moz-placeholder { /* Firefox 18- */
+		color:transparent;
+	}
+
+	.transparentPlaceholder::-moz-placeholder {  /* Firefox 19+ */
+		color:transparent;
+	}
+
+	.transparentPlaceholder:-ms-input-placeholder {
+		color:transparent;
+	}
+}
+
+.checkbox input[type=checkbox] {
+	position: relative;
+	margin-right: .5em;
+	vertical-align: top;
+}
+
+.validacionHelpArea {
+	text-align: center;
+	margin-bottom: 1em;
+}
+
+.validacionForm .validacionMessages {
+	line-height: 2em;
+	text-align:center;
+	border: 1px;
+	padding: 0;
+	margin: 1em 0;
+}
+
+.validacionForm .validacionErrorMessages {
+	display: block;
+	border: 1px solid #fd8080;
+}
+
+.validacionForm .validacionWarnMessages {
+	display: block;
+	border: 1px solid #ff8000;
+}
+
+.validacionForm .validacionInfoMessages {
+	display: block;
+	border: 1px solid #00dd00;
+}
+
+.validacionFormButtons {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	/* flex-direction: row-reverse; */  /* add this to reverse the order of the continue/cancel buttons */
+}
+
+/*
+ * OAuth user consent views
+ */
+
+.userConsentPromptArea {
+	margin-bottom: 1em;
+}
+
+.userConsentScopeList {
+	margin-bottom: 1em;
+}
+
+.userConsentScope {
+	margin-bottom: 1em;
+}
+
+.userConsentScopeTitleText {
+	font-weight: bold;
+}
+
+.userConsentScopeAttributesTable {
+	font-size: inherit;
+   	line-height: inherit;
+	margin-top: 1em;
+}
+
+.userConsentScopeAttributesTable td {
+	vertical-align: text-top;
+   	padding-top: 0.5em;
+   	padding-right: 2em;
+}
+
+.userConsentScopeAttributeNameText {
+}
+
+.userConsentScopeImageArea {
+	text-align:center;
+}
+
+.userConsentScopeImage {
+	height: 4em;
+}
+
+.userConsentDetailsContainer {
+	margin-bottom: 1em;
+}
+
+.userConsentDetailsHeaderArea {
+	margin-bottom: 1em;
+}
+
+.userConsentDetailsHeaderPromptText {
+}
+
+.userConsentDetailsHeaderExpandText {
+}
+
+.userConsentDetailsHeaderExpandArrow {
+	width: 20px;
+	height: 20px;
+	fill: #797979;
+}
+
+.userConsentDetailsArea {
+	color: #000;
+	background-color: #f9f9f9;
+	padding: 4% 8% 4% 4%;
+	margin: 3% 0% 5% 0%;
+	border: 1px solid #ddd;
+	border-radius: .25rem;
+}
+
+.userConsentDetailsItemArea {
+}
+
+.userConsentDetailsItemLabelTextArea {
+}
+
+.userConsentDetailsItemLabelText {
+	font-weight: bold;
+}
+
+.userConsentDetailsItemValueTextArea {
+	word-wrap: break-word;
+}
+
+.userConsentDetailsItemValueText {
+	word-wrap: break-word;
+}
+
+.userConsentDetailsSeparator {
+}
+
+.userConsentFormArea {
+}
+
+.userConsentTitleArea {
+	margin-bottom: 1em;
+}
+
+.userConsentTopArea {
+	margin-bottom: 1em;
+}
+
+.userConsentBottomArea {
+	margin-bottom: 1em;
+}
+
+.userConsentHelpArea {
+	text-align: center;
+	margin-bottom: 1em;
+}
+
+.userConsentContainer {
+	border: 1px solid #d8d8d8;
+	padding: 1em;
+}
+
+.userConsentButtons {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	/* flex-direction: row-reverse; */  /* add this to reverse the order of the authorize/deny buttons */
+}
+
+.userConsentBottomText {
+	margin-top: 1em;
+}
+
+/*
+ * IdP welcome view
+ */
+
+.headerOptions {
+	min-height: 34px;
+}
+
+.welcomeContainer {
+	text-align: center;
+}
+
+.welcomeLogoutForm {
+	text-align: center;
+}
+
+.welcomeSubjectDisplayNameArea {
+	text-align: right;
+}
+
+.welcomeLogoutForm {
+	text-align: left;
+	border-left: 1px solid #d8d8d8;
+}
+
+.welcomeLogoutButton {
+	background: none;
+	border: none;
+	padding: 0;
+	color: #9C0000;
+	cursor: pointer;
+}
+
+.welcomeLogoutButton:hover {
+	text-decoration:underline;
+}
+
+/*
+ * IdP post-logout view
+ */
+
+.loggedOutContainer {
+	text-align: center;
+}
+
+.loggedOutActions {
+	margin: 1em 0;
+}
+
+/*
+ * Error view
+ */
+
+.errorContainer {
+	text-align: center;
+}
+
+.errorActions {
+	margin-top: 1em;
+}
+
+.errorContinueButton {
+	color: black !important;
+}
+
+/*
+ * Disabled cookies information view
+ */
+
+.disabledCookiesInfoContainer {
+	text-align: center;
+}
+
+.headerImage {
+	height: 107px !important;
+	width: 277px !important;
+}
+#certificadoForm {
+	width: 80%;
+	margin-left: 10%;
+	margin-right: auto;
+}
